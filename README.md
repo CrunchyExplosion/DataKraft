@@ -58,7 +58,8 @@ python app.py
 The application will start, and you can access it at http://127.0.0.1:5000/ in your web browser.
 
 # Deployment on Azure
-This application has been successfully deployed on Azure using Azure Web App services. To get started with deploying your own Flask applications on Azure, refer to the official documentation. 👉 https://learn.microsoft.com/en-us/azure/app-service/
+This application has been successfully deployed on Azure using Azure Web App services. To get started with deploying your own Flask applications on Azure, refer to the official documentation. 
+👉 https://learn.microsoft.com/en-us/azure/app-service/
 
 
 # Acknowledgments
