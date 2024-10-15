@@ -1,4 +1,4 @@
-# Flask Zip Hiding Application
+# DataKraft : Zip Hiding Application
 
 This Flask application allows users to hide ZIP files within images using encoding techniques and then retrieve the original ZIP file by decoding the image. 
 
@@ -57,11 +57,9 @@ python app.py
 ```
 The application will start, and you can access it at http://127.0.0.1:5000/ in your web browser.
 
-Deployment on Azure
-This application has been successfully deployed on Azure using Azure Web App services. To get started with deploying your own Flask applications on Azure, refer to the official documentation. 
-```bash
-https://learn.microsoft.com/en-us/azure/app-service/
-```
+# Deployment on Azure
+This application has been successfully deployed on Azure using Azure Web App services. To get started with deploying your own Flask applications on Azure, refer to the official documentation. 👉 https://learn.microsoft.com/en-us/azure/app-service/
+
 
 # Acknowledgments
 Flask: A micro web framework for Python.
