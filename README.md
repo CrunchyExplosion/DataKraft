@@ -21,8 +21,8 @@ To get a copy of this repository on your local machine, use the following comman
 git clone https://github.com/your_username/your_repository_name.git
 ```
 
-##Setup the Virtual Environment
-It is recommended to use a virtual environment to manage dependencies. You can create a virtual environment using venv:
+## Setup the Virtual Environment
+It is recommended to use a virtual environment to manage dependencies. You can create a virtual environment using `venv`.
 
 ## 1. Navigate to the project directory:
 ```bash
