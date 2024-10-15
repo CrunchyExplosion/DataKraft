@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataKraft</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <!-- Video background -->
+    <video autoplay muted loop id="video-background">
+        <source src="{{ url_for('static', filename='video.mp4') }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Over video background -->
+    <header>
+        
+        <h1>DataKraft</h1>
+        <div class="h2-line">By Apoorv Sharma</div>
+    </header>
+
+
+
+    <main>
+        <div class="data-section">
+
+            <div class="hide-data">
+                <h2>Hide Data</h2>
+                <form action="/hide" method="POST" enctype="multipart/form-data" class="upload-form">
+                    <label for="zip_file" class="file-label">Select a zip file:</label>
+                    <input type="file" id="zip_file" name="zip_file" accept=".zip" class="file-input">
+                    <button type="submit" class="submit-button">Hide Data</button>
+                </form>
+                
+            </div>
+
+            <button onclick="goHome()" class="new_upload_button">New Upload</button>
+
+            <script>
+                function goHome() {
+                    // Redirect to the home route ('/')
+                    window.location.href = "/";
+                }
+            </script>
+
+
+
+            <div class="decrypt-data">
+                <h2>Decrypt Data</h2>
+                <form action="/decrypt" method="POST" enctype="multipart/form-data" class="upload-form">
+                    <input type="file" name="image_file" accept=".png" class="file-input">
+                    <div class="input-wrapper">
+                        <input type="text" name="key" placeholder="Enter Secret Key ?" class="input-key">
+                        <div class="popup">Entering Wrong Key Will Automatically Corrupt Your File</div>
+                    </div>
+                    <br><br>
+                    <button type="submit" class="submit-button">Decrypt Data</button>
+                </form>
+                {% if decrypted_zip %}
+                <br><br>
+                <h3>Decrypted Zip File:</h3>
+                <a href="{{ url_for('static', filename='decrypted.zip') }}" download>Download Decrypted Zip</a><br>
+                {% endif %}
+            </div>
+
+            {% if key %}                
+                <div class="key">
+                    <h3 class="key-header">Your Secret Key:</h3>
+                    <p class="key-value">{{ key }}</p>
+                    <p class="key-explanation">Keep this key safe and do not share it with anyone.</p>
+                    <div class="download-button-set">
+                        <a href="{{ url_for('static', filename='output_image.png') }}" download="Encoded.png" class="download-button">Download Image</a>
+                    </div>
+                </div>
+            {% endif %}
+ 
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DataKraft. All rights reserved.</p>
+        <p>
+            Connect With Me : 
+        <a href="https://www.linkedin.com/in/apoorvsharma603/" class="linkedin_wala">LinkedIn</a>
+        ,
+        <a href="https://leetcode.com/u/Apoorv603/" class="linkedin_wala">My Leetcode</a>
+
+        </p>
+    </footer>
+
+</body>
+</html>
