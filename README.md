@@ -6,6 +6,8 @@ This Flask application allows users to hide ZIP files within images using encodi
 - Upload a ZIP file to hide data within an image.
 - Decode an image to retrieve the original ZIP file using a key.
 
+!["Image description"](static/ss.jpg)
+
 ## Table of Contents
 1. [Clone the Repository](#clone-the-repository)
 2. [Setup the Virtual Environment](#setup-the-virtual-environment)
