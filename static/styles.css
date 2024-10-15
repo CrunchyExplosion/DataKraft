@@ -1,0 +1,260 @@
+/* General styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Light background color */
+}
+
+/* Header styling */
+header {
+    position: relative;
+    background-image: url('https://i.pinimg.com/736x/f1/e8/53/f1e85304723aceb7d37f1c3d9893b93b.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 25%; /* Adjusted height for header */
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    opacity: 0.95;
+}
+
+header h1 {
+    font-size: 60px; /* Increased font size for header */
+}
+
+.h2-line {
+    font-size: 20px; /* Adjusted font size */
+    margin-bottom: 10px;
+}
+
+/* Main content styling */
+main {
+    padding: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: rgb(244, 243, 243);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.99;
+}
+
+.linkedin_wala
+{
+    color: rgb(112, 167, 234);
+}
+
+/* Video background */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Data section layout */
+.data-section {
+    display: flex;
+    justify-content:space-between;
+    align-items: center; /* Center items vertically */
+    margin: 100px auto; /* Vertical margin of 100px, auto for horizontal centering */
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+.hide-data, .decrypt-data {
+    flex: 1;
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 20px;
+    border: 3px solid #1cccba;
+    border-radius: 20px;
+    background-color: #f8f8f8; /* Light background color */
+    text-align: center; /* Center text horizontally */
+    opacity: 0.95;
+    height: 250px;
+}
+
+/* Key display styling */
+.key {
+    border: 1px solid #79779d;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff9e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px; /* Adjusted margin */
+}
+
+.key-header {
+    font-size: 22px; /* Adjusted font size */
+    margin-bottom: 10px; /* Adjusted margin */
+}
+
+.key-value {
+    font-size: 20px; /* Adjusted font size */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjusted margin */
+}
+
+.key-explanation {
+    font-size: 18px;
+    color: #333; /* Adjusted text color */
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjusted margin */
+}
+
+
+@media (max-width: 768px) {
+    .data-section {
+        flex-direction: column;
+        align-items: center; /* Center items horizontally on smaller screens */
+    }
+    .hide-data, .decrypt-data {
+        margin-bottom: 20px;
+    }
+}
+
+/* Form and button styling */
+.upload-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #080101;
+    border-radius: 20px;
+    background-color: #d5ebbb;
+    text-align: center;
+    height: 150px;
+
+}
+
+.file-label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight:550;
+}
+
+.file-input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 0 auto 15px;
+    border: 1px solid #180202;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* New upload button */
+.new_upload_button{
+
+    border-radius: 100px;
+    background-color: #95cdee;
+    font-size: 15px;
+    padding: 8px 12px;
+    
+}
+
+.new_upload_button:hover {
+    background-color: #bcdcee;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Download button styling */
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 10px; /* Adjusted margin */
+}
+
+.download-button:hover {
+    background-color: #2c48e6;
+}
+
+
+
+h2{
+    color: rgb(4, 28, 10);
+    margin-top: -4px;
+}
+
+.input-key {
+    width: 100%; /* Make the input take full width of its container */
+    max-width: 80%; /* Limit the width to 400px */
+    font-size: 20px; /* Increase font size */
+    border: 2px solid #1cccba; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #f8f8f8; /* Light background color */
+    color: #110505; /* Text color */
+    outline: none; /* Remove default outline on focus */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+}
+
+.input-key:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Slightly larger shadow on focus */
+}
+
+/* Pseudo-element for the pop-up */
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.input-wrapper .popup {
+    display: none;
+    position:absolute;
+    top: -30px; /* Adjust as needed */
+    left: 0;
+    background-color: #ea8948;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.input-key:focus + .popup {
+    display: block;
+    opacity: 1;
+}
+
